@@ -51,7 +51,7 @@ generate_bad_word() {
 }
 
 generate_bad_word_talk() {
-	local a=$(/home/lesek/Programy/generate_bad_word.sh)
+	local a=$(generate_bad_word)
 	echo "$a"
 	spd-say -t female2 -r -100 "$a"
 }
