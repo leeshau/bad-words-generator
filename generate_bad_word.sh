@@ -53,7 +53,7 @@ generate_bad_word() {
 generate_bad_word_talk() {
 	local a=$(generate_bad_word)
 	echo "$a"
-	spd-say -t female2 -r -100 "$a"
+	spd-say -t female2 --rate -100 --wait "$a"
 }
 
 generate_bad_word
